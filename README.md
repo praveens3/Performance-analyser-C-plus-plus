@@ -14,6 +14,8 @@ Yes its not a high level profiler to automatically detect the source code and ge
 	for a recursive function,
 	from one function to another function,
 	from one class method to another class method,
+	for threaded functions,
+	inside threaded functions,
 	.....,
 	etc.
 	
@@ -25,10 +27,10 @@ line performance can be calculated no matters where the line exist in the code.
 	2. the time taken for the selected events to execute
 
 ### Features
-IPerf is thread safe
-At the same time, IPerf core is designed as singleton in order to deliver consistency across a whole client application instance.
+- IPerf is thread safe
+- At the same time, IPerf core is designed as singleton in order to deliver consistency across a whole client application instance.
 
 #### Log
 	Author: Praveen S
-	Date: 15-Dec-2018
+	Date: 16-Dec-2018
 	Release: v1.0
