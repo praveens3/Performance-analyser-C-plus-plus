@@ -33,7 +33,7 @@ line performance can be calculated no matters where the line exist in the code.
 - IPerf is thread safe
 - At the same time, IPerf core is designed as singleton in order to deliver consistency across a whole client application instance.
 
-#### Log
+### Log
 	Author: Praveen S
 	Date: 16-Dec-2018
 	Release: v1.0
