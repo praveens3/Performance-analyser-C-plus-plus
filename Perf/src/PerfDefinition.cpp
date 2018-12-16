@@ -8,9 +8,27 @@
 #include <mutex>
 #include <map>
 
+// Check windows
+#if _WIN32 || _WIN64
+#if _WIN64
+const std::string BUILD_ARCHITECTURE = " x64 ";
+#else
+const std::string BUILD_ARCHITECTURE = " x86 ";
+#endif
+#endif
+
+// Check GCC
+#if __GNUC__
+#if __x86_64__ || __ppc64__
+const std::string BUILD_ARCHITECTURE = " x64 ";
+#else
+const std::string BUILD_ARCHITECTURE = " x86 ";
+#endif
+#endif
+
 /*
 * **************************************************************************************************
-* IPerf Interface instance creation
+* IPerfManager singleton instance creation
 * **************************************************************************************************
 */
 IPERF::IPerfManager* IPERF::getPerf()
@@ -27,7 +45,7 @@ std::mutex gMutextStart;
 
 /*
 * **************************************************************************************************
-* Performance Definition member definitions
+* IPerfManager's derived class definition member definitions
 * **************************************************************************************************
 */
 
@@ -173,7 +191,7 @@ void PerfDefinition::save()
    ss << std::put_time(&lTM, "%Y-%m-%d %X");
 
    lFile << std::endl;
-   lFile << "----- Performance analysis result-----" << std::endl;
+   lFile << "----- Performance analysis result" + BUILD_ARCHITECTURE + "-----" << std::endl;
    lFile << "[" << ss.str() << "]" << std::endl;
    lFile << "[name]             " << "[invoke count]     " << "[time consumed]" << std::endl;
    std::string lName;
