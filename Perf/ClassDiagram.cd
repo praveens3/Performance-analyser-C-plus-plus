@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IPERF::IPerf">
+    <Position X="5" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEEACAAAAAAAAAAAAgAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>IPerf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IPERF::IPerfInstance">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>inc\IPerf.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PERF_DEFINITION::PerfDefinition">
+    <Position X="5" Y="2.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PERF_DEFINITION::PerfDefinition::STATUS">
+        <TypeIdentifier>
+          <NewMemberFileName>PerfDefinition.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="PERF_DEFINITION::PerfDefinition::PerfData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>PerfDefinition.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAACAAAAgAAAgAAAgAAAgAAQAQAAIAAAAQAA=</HashCode>
+      <FileName>inc\PerfDefinition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PERF_INSTANCE_DEFINITION::PerfInstanceDefinition">
+    <Position X="0.5" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAgAAAAAAAAAAggAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>inc\PerfInstanceDefinition.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
