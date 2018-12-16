@@ -7,7 +7,7 @@
 
 namespace PERF_DEFINITION
 {
-#define PerfTime std::chrono::time_point<std::chrono::system_clock>
+#define PerfTime std::chrono::time_point<std::chrono::steady_clock>
 
    /*
    * @brief This class gives the definition for the Interface exposed API's
