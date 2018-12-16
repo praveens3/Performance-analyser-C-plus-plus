@@ -10,7 +10,7 @@ Before going into it, Let it be clear this is not a high level profiler which au
 ##### So what this library will do for us?
 It will do calculation at granular level with respect to the programmer's interest by a set of manual entries in your source code.
 
-##### Okay lets speak about the granularity, actually granularity here is in the aspect of calculating performance for the following events,
+##### Okay lets speak about a littel bit of granularity here, actually granularity here is in the aspect of calculating performance for the following events,
 	for a statement,
 	for a set of statements,
 	for a function,
@@ -25,7 +25,7 @@ It will do calculation at granular level with respect to the programmer's intere
 In simple terms, In the code base at any place of a definition area from one line to the another
 line performance can be calculated no matters where the line exist in the code.
 
-##### erformance calculation is based on the following term
+##### Performance calculation is based on the following term
 - number of time the selected events get executed and
 - the time taken for the selected events to execute
 
