@@ -8,7 +8,7 @@ IPerf will help developer to identify and segregate time consuming code area to 
 Before going into it, Let it be clear this is not a high level profiler which automatically detect the source code and generate the report during run time.
 
 ##### So what this library will do for us?
-It will do calculation at granular level with respect to the programmer's interest by a set of manual entries in your source code.
+It will do calculation at granular level with respect to the programmer's interest by setting up manual entries in your source code.
 
 ##### Okay lets speak about a littel bit of granularity here, actually granularity here is in the aspect of calculating performance for the following events,
 	for a statement,
@@ -22,8 +22,7 @@ It will do calculation at granular level with respect to the programmer's intere
 	.....,
 	etc.
 	
-In simple terms, In the code base at any place of a definition area from one line to the another
-line performance can be calculated no matters where the line exist in the code.
+In simple terms, In the code base at any place of a definition area from one line to the another line performance can be calculated no matters where the line exist in the code.
 
 ##### Performance calculation is based on the following term
 - number of time the selected events get executed and
@@ -31,7 +30,7 @@ line performance can be calculated no matters where the line exist in the code.
 
 ### Features
 - IPerf is thread safe
-- At the same time, IPerf core is designed as singleton in order to deliver consistency across a whole client application instance.
+- IPerf core is designed as singleton in order to deliver consistency across a whole client application instance.
 
 ### Log
 	Date: 16-Dec-2018
